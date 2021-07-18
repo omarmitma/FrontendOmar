@@ -13,10 +13,7 @@
   background-repeat: no-repeat;
   background-position: 85% top;
 }
-.active{
-  background-color: #c5e4e7 !important;
-  color: #00494d !important;
-}
+
 .navegador a {
   background-color: #7541c8;
 }
@@ -639,5 +636,9 @@ progress {
 
 .rounded-pill {
   border-radius: 50rem !important;
+}
+.active{
+  background-color: #c5e4e7 !important;
+  color: #00494d !important;
 }
 /*# sourceMappingURL=custom.css.map */
