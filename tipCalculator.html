@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Tip calculator</title>
+</head>
+<body class="bodyCalculator bg-fondo">
+    <div class="navegador m-2 ps-1 pe-1 d-inline-flex">
+        <a href="index.html" class="rounded-pill nav-link text-white">Inicio</a>
+    </div>
+    <div class="containerCalculator d-flex p-30 bg-light rounded-20">
+        <div class="row w-100">
+            <div class="col-12 col-lg-6 ">
+                <div>
+                    <div class="mb-2">Bill</div>
+                    <div class="inputDiv d-flex">
+                        <img src="Iconos/icon-dollar.svg" alt="">
+                        <input id="costInput" type="text" class="w-100" placeholder="0" id="costInput" onkeypress="return isNumberKey(event)">
+                    </div>
+                </div>
+                <div>
+                    <div class="mt-4">Select Tip %</div>
+                    <div class="row">
+                        <div class="tip col-6 col-md-4"><div class="tip2" id="tip5" onclick="choiceChange(5)">5%</div></div>
+                        <div class="tip col-6 col-md-4"><div class="tip2" id="tip10" onclick="choiceChange(10)">10%</div></div>
+                        <div class="tip col-6 col-md-4"><div class="tip2" id="tip15" onclick="choiceChange(15)">15%</div></div>
+                        <div class="tip col-6 col-md-4"><div class="tip2" id="tip25" onclick="choiceChange(25)">25%</div></div>
+                        <div class="tip col-6 col-md-4"><div class="tip2" id="tip50" onclick="choiceChange(50)">50%</div></div>
+                        <div class="customTip col-6 col-md-4"><input id="tipInput" type="text" placeholder="Custom" onkeypress="return isNumberKey(event)"></div>
+                    </div>
+                </div>
+                <div>
+                    <div>Number of People</div>
+                    <div class="inputDiv d-flex">
+                        <img src="Iconos/icon-person.svg" alt="">
+                        <input id="peopleInput" type="text" class="w-100" placeholder="0" onkeypress="return isNumberKey(event)">
+                    </div>
+                </div>
+            </div>
+            <div class="result col-12 col-lg-6 rounded-9 ">
+                <div class="w-100 row ">
+                    <div class="col-6 ">
+                        <h6 class="text-white">Tip Amount</h6>
+                        <p>/ person</p>
+                    </div>
+                    <div class="precio d-flex justify-content-end col-6">
+                        <h3 id="tip">$0.00</h3>
+                    </div>
+                </div>
+                <div class="w-100 row">
+                    <div class="col-6">
+                        <h6 class="text-white">Total</h6>
+                        <p>/ person</p>
+                    </div>
+                    <div class="precio d-flex justify-content-end col-6">
+                        <h3 id="total">$0.00</h3>
+                    </div>
+                </div>
+                <div class="btnReset">Reset</div>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
