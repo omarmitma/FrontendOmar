@@ -22,6 +22,16 @@
   background-color: #51367d;
 }
 
+.bodyLanding .navegador a {
+  background-color: #eee;
+  color: #111;
+}
+
+.bodyLanding .navegador a:hover {
+  background-color: #ccc;
+  color: #333;
+}
+
 .rounded-20 {
   border-radius: 20px;
 }
@@ -156,6 +166,250 @@
 
 .btnReset:hover {
   background-color: #c5e4e7;
+}
+
+/*Card*/
+.bodyCard {
+  font-family: 'Inter', sans-serif;
+  background-color: #090b1a;
+  color: white;
+  font-size: 15px;
+  margin: 0;
+}
+
+.containerCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px;
+  border-radius: 50px;
+}
+
+.previewCard {
+  background-color: #1b1938;
+  border-radius: 10px;
+}
+
+.accent {
+  background-size: cover;
+  border-radius: 0 10px 10px 0;
+  width: 100%;
+  height: 100%;
+}
+
+.accent div {
+  width: 100%;
+  height: 100%;
+  background-color: #6f09af;
+  border-radius: 10px 10px 0 0;
+}
+
+.divText {
+  padding: 10px;
+  height: 100%;
+  text-align: center;
+}
+
+.divText p {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.pPrincipal {
+  margin-top: 30px;
+}
+
+.accent div img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  opacity: .58;
+}
+
+.divText .row {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+
+.divText .row div h3, .divText .row div .h3 {
+  font-weight: bold;
+}
+
+.divText h2, .divText .h2 {
+  font-weight: bold;
+}
+
+.divText h2 span, .divText .h2 span {
+  color: #aa5cdb;
+}
+
+.accent .images-desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .previewCard {
+    height: 400px;
+    min-width: 650px;
+    width: 75%;
+  }
+  .containerCard {
+    margin: 0;
+    height: 100vh;
+  }
+  .accent {
+    float: right;
+    width: 50%;
+    height: 100%;
+  }
+  .accent .images-desktop {
+    display: block;
+  }
+  .accent .images-desktop img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+    opacity: .58;
+  }
+  .accent div {
+    border-radius: 0 10px 10px 0;
+  }
+  .accent .images-mobile {
+    display: none;
+  }
+  .divText {
+    width: 50%;
+    padding: 50px;
+  }
+}
+
+/*Landing page*/
+.bodyLanding {
+  background-color: #674baf;
+  background-image: url("../images/bg-mobile.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.containerLanding {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8px 15px;
+}
+
+.divLogo {
+  text-align: left;
+  padding-bottom: 40px;
+}
+
+.divLogo div {
+  width: 40%;
+}
+
+.divLogo img {
+  width: 100%;
+}
+
+.containerLanding .row {
+  width: 100%;
+}
+
+.divImg img {
+  width: 100%;
+}
+
+.containerLanding .divTextLanding {
+  padding: 25px 15px;
+}
+
+.divTextLanding h2, .divTextLanding .h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.divTextLanding p {
+  margin-top: 20px;
+  margin-bottom: 35px;
+  color: #fff;
+}
+
+.divTextLanding a {
+  margin-top: 20px;
+  text-decoration: none;
+  padding: 12px 50px;
+  border-radius: 30px;
+  background-color: #fff;
+  color: #674baf;
+  -webkit-box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.35);
+          box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.35);
+}
+
+.divTextLanding a:hover {
+  color: #fff;
+  background-color: #e882e8;
+}
+
+.fab {
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 12px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  margin-right: 5px;
+}
+
+.fab:hover {
+  color: #e882e8;
+  border: 1px solid #e882e8;
+}
+
+.footerIcon {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 992px) {
+  .bodyLanding {
+    background-size: 95%;
+  }
+  .bodyLanding {
+    background-image: url("../images/bg-desktop.svg");
+    min-height: 100vh;
+  }
+  .containerLanding .divTextLanding {
+    text-align: left;
+  }
+  .divTextLanding h2, .divTextLanding .h2 {
+    font-size: 2.4rem;
+  }
+  .divLogo div {
+    width: 28%;
+  }
+  .containerLanding {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px 60px;
+  }
+  .footerIcon {
+    margin-right: 55px;
+    text-align: right;
+  }
+  .containerLanding .divTextLanding {
+    padding: 50px 43px;
+  }
 }
 
 /*!
@@ -413,6 +667,18 @@ progress {
             flex: 0 0 auto;
     width: 33.33333%;
   }
+  .col-lg-5 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 41.66667%;
+  }
+  .col-lg-7 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 58.33333%;
+  }
   .col-lg-8 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
@@ -445,6 +711,23 @@ progress {
 
 .nav-link:hover, .nav-link:focus {
   color: #5e34a0;
+}
+
+.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
 }
 
 @keyframes progress-bar-stripes {
@@ -636,9 +919,5 @@ progress {
 
 .rounded-pill {
   border-radius: 50rem !important;
-}
-.active{
-  background-color: #c5e4e7 !important;
-  color: #00494d !important;
 }
 /*# sourceMappingURL=custom.css.map */
