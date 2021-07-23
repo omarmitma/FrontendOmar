@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>single Column</title>
+  <script src="https://kit.fontawesome.com/8d47b774f2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <div class="navegador m-2 ps-1 pe-1 d-inline-flex">
+    <a href="index.html" class="rounded-pill nav-link text-white">Inicio</a>
+</div>
+ <div class="containerColumn">
+    <img src="images/logoSingleColumn.svg" alt="">
+    <div class="divPrincipal">
+      <h1>We are launching <span>soon!</span></h1>
+      <h4>Subscribe and get notified</h4>
+      <form action="" class="divFormColumn">
+        <div class="row">
+          <div class="col-12 col-lg-8">
+            <input type="text" placeholder="Your email addres" id="email">
+          </div>
+          <label for="" id="message"></label>
+          <div class="divSubmit col-12 col-lg-4">
+            <input type="submit" value="Notify Me" onclick="return validarCorreo()">
+          </div>
+        </div>
+      </form>
+      <div class="divImageColumn">
+        <img src="images/illustration-dashboard.png" alt="">
+      </div>
+      <div class="footerColumn">
+        <div class="divIcon">
+          <a href="" class="fab fa-facebook-f"></a>
+          <a href="" class="fab fa-twitter"></a>
+          <a href="" class="fab fa-instagram"></a>
+        </div>
+        <div class="divCopyright">
+          <p>&copy; Copyright Ping. All rights reserved.</p>
+        </div>
+      </div>
+      
+    </div>
+ </div>
+ <script src="js/singleColumn.js"></script>
+</body>
+</html>

@@ -360,7 +360,7 @@
   background-color: #e882e8;
 }
 
-.fab {
+.footerIcon a .fab {
   color: #fff;
   cursor: pointer;
   padding: 10px 12px;
@@ -369,7 +369,7 @@
   margin-right: 5px;
 }
 
-.fab:hover {
+.footerIcon a .fab:hover {
   color: #e882e8;
   border: 1px solid #e882e8;
 }
@@ -409,6 +409,122 @@
   }
   .containerLanding .divTextLanding {
     padding: 50px 43px;
+  }
+}
+
+/*single column*/
+.containerColumn {
+  text-align: center;
+}
+
+.divFormColumn input {
+  border-radius: 30px;
+  padding: 10px 25px;
+  outline: none;
+  border: 1px solid #aaa;
+}
+
+.divFormColumn .row {
+  width: 95%;
+  margin: auto;
+  text-align: left;
+}
+
+.divFormColumn .row label {
+  width: auto;
+  position: absolute;
+  margin: 48px 10px;
+  color: #ff5263;
+  font-size: 12px;
+}
+
+.containerColumn div h1, .containerColumn div .h1 {
+  color: #969696;
+}
+
+.containerColumn .divPrincipal {
+  margin-top: 40px;
+}
+
+.containerColumn div h1 span, .containerColumn div .h1 span {
+  color: #151f29;
+  font-weight: bold;
+}
+
+.divFormColumn {
+  margin-top: 40px;
+}
+
+.divFormColumn .row div input {
+  width: 98%;
+}
+
+.divFormColumn label {
+  display: block;
+}
+
+.divImageColumn {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.divImageColumn img {
+  width: 95%;
+}
+
+.divFormColumn .row .divSubmit {
+  margin-top: 25px;
+}
+
+.divFormColumn .row .divSubmit input {
+  background-color: #4f7df3;
+  color: #ffffff;
+  border: none;
+}
+
+.divFormColumn .row .divSubmit input:hover {
+  background-color: rgba(79, 125, 243, 0.7);
+}
+
+.footerColumn {
+  margin-top: 80px;
+}
+
+.footerColumn .divIcon a {
+  text-decoration: none;
+  width: 34px;
+  padding: 7px 0;
+  text-align: center;
+  color: #4f7df3;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+}
+
+.footerColumn .divIcon a:hover {
+  color: #fff;
+  background-color: #4f7df3;
+}
+
+.footerColumn .divCopyright {
+  margin-top: 20px;
+}
+
+@media (min-width: 992px) {
+  .divFormColumn .row .divSubmit {
+    margin-top: 0;
+  }
+  .divImageColumn img {
+    width: 45%;
+  }
+  .divFormColumn .row {
+    width: 45%;
+  }
+  .divFormColumn .row label {
+    width: auto;
+    position: absolute;
+    margin: 48px 30px;
+    color: #ff5263;
+    font-size: 1rem;
   }
 }
 
@@ -470,11 +586,21 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
- h2, .h2, h3, .h3, h6, .h6 {
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h6, .h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
+}
+
+h1, .h1 {
+  font-size: calc(1.375rem + 1.5vw);
+}
+
+@media (min-width: 1200px) {
+  h1, .h1 {
+    font-size: 2.5rem;
+  }
 }
 
 h2, .h2 {
@@ -494,6 +620,16 @@ h3, .h3 {
 @media (min-width: 1200px) {
   h3, .h3 {
     font-size: 1.75rem;
+  }
+}
+
+h4, .h4 {
+  font-size: calc(1.275rem + 0.3vw);
+}
+
+@media (min-width: 1200px) {
+  h4, .h4 {
+    font-size: 1.5rem;
   }
 }
 
@@ -543,11 +679,25 @@ svg {
   vertical-align: middle;
 }
 
+label {
+  display: inline-block;
+}
+
 input {
   margin: 0;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+}
+
+
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+
+[type="submit"]:not(:disabled) {
+  cursor: pointer;
 }
 
 /* rtl:raw:
