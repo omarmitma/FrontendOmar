@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body class="bodySesion1">
+    <div class="navegador m-2 ps-1 pe-1 d-inline-flex">
+        <a href="indexjs.html" class="rounded-pill nav-link text-white">Retroceder</a>
+    </div>
+    <div class="containerSesion1">
+        <h1>Sesion 1</h1>
+        <div class="divEjerciciosS1">
+            <p>1.	PC:que lea un nombre y muestre por pantalla: “Buenos días nombre_introducido”.</p>
+            <div>
+                <input type="text" id="nombreE1" placeholder="Ingrese un nombre">
+                <input type="button" value="Mostrar" onclick="mostrarNombre()">
+                <label id="mensajeE1"></label>
+                <br><br>
+            </div>
+            <p>2.	Escribir un programa que lea dos números, luego los sume y que se muestre por pantalla el resultado de la suma. </p>
+            <div>
+                <input type="number" id="primerNumeroE2" placeholder="Primer Numero">
+                <input type="number" name="" id="segundoNumeroE2" placeholder="Segundo Numero">
+                <input type="button" value="Calcular" onclick="calcular()">
+                <span class="d-block">Resultado: <label id="resultadoE2"></label></span>
+            </div>
+            <p>3.	Descomponer un número ingresado de 'n' cifras y calcular la suma de sus cifras. </p>
+            <div>
+                <input type="number" name="" id="numeroE3" placeholder="Numero">
+                <input type="button" value="Descomponer y sumar" onclick="ejer3()">
+                <div>
+                    <span>Resultado de la suma de sus cifras <label id="resultadoE3"></label></span>
+                </div>
+            </div>
+            <p>4.	Escribir un programa que sume, reste, multiplique y divida dos números leídos desde el teclado, y que luego nos muestre los valores resultantes. </p>
+            <div>
+                <input type="number" id="PnumeroE4" placeholder="Primer Numero">
+                <input type="number" id="SnumeroE4" placeholder="Segundo Numero">
+                <div>
+                    <span>Operacion a realizar</span>
+                    <input type="button" value="Sumar" onclick="sumarE4()">
+                    <input type="button" value="Restar" onclick="restarE4()">
+                    <input type="button" value="Multiplicar" onclick="multiE4()">
+                    <input type="button" value="Dividir" onclick="dividirE4()">
+                </div>
+                <div>
+                    <span>Resultado <label id="resultadoE4"></label></span>
+                </div>
+            </div>
+            <p>5.	Escribe un programa que lee un número entero por teclado y obtiene y muestra por pantalla el doble y el triple de ese número.</p>
+            <div>
+                <input type="number" id="numeroE5" placeholder="Ingrese el numero">
+                <input type="button" value="calcular" onclick="ejer5()">
+                <div>
+                    <span>Doble del numero: <label id="dobleE5"></label></span>
+                </div>
+                <div>
+                    <span>Triple del numero: <label id="tripleE5"></label></span>
+                </div>
+            </div>
+            <p>6.	Intercambiar el contenido de dos variables y mostrarlo en pantalla.</p> 
+            <div>
+                <input type="text" id="variable1E6" placeholder="Variable 1">
+                <input type="text" id="variable2E6" placeholder="Variable 2">
+                <input type="button" value="Intercambiar" onclick="ejer6()">
+                <div>
+                    <span>La variable 1 Intercambiado es: <label id="resul1E6"></label></span>
+                </div>
+                <div>
+                    <span>La variable 2 Intercambiado es: <label id="resul2E6"></label></span>
+                </div>
+                
+            </div>
+            <p>7.	Realizar un algoritmo que calcule la posible edad de una persona.</p> 
+            <div>
+                <input type="number" id="minE7" placeholder="Minima edad">
+                <input type="number" id="maxE7" placeholder="Maxima edad">
+                <input type="button" value="Posible edad" onclick="ejer7()">
+                <div>
+                    <span>Puedes tener <label id="resulE7"></label></span>
+                </div>
+            </div>
+            <p>8.	Escribir un programa que lea dos números enteros A y B, y obtenga los valores de la división entera de A dividido con B y el residuo de la operación.</p>
+            <div>
+                <input type="number" id="PnumE8" placeholder="Numero A">
+                <input type="number" id="SnumE8" placeholder="Numero B">
+                <input type="button" value="Dividir" onclick="ejer8()">
+                <div>
+                    <span>Resultado : <label id="resulE8"></label></span>
+                </div>
+                <div>
+                    <span>Residuo : <label id="residuoE8"></label></span>
+                </div>
+            </div> 
+            <p>9.	Hacer un algoritmo que imprima el nuevo sueldo de un empleado, si tuvo un aumento del 10%.</p> 
+            <div>
+                <input type="number" id="sueldoE9" placeholder="Sueldo">
+                <input type="button" value="Aumentar" onclick="ejer9()">
+                <div>
+                    <span>Nuevo Sueldo: <label id="resulE9"></label></span>
+                </div>
+            </div>
+            <p>10.	Programa que lea una cantidad de grados centígrados y la pase a grados Fahrenheit. La fórmula correspondiente es: F = 32 + (9 * C / 5)</p> 
+            <div>
+                <input type="number" id="centigE10" placeholder="Cantidad de °C">
+                <input type="button" value="Convertir" onclick="ejer10()">
+                <div>
+                    <span>Grados Fahrenheit: <label id="resulE10"></label></span>
+                </div>
+            </div>
+            <p>11.	Programa que determine el monto a pagar por la compra de cierta cantidad de unidades de un producto.</p> 
+            <div>
+                <select name="producto" id="productoE11" onchange="changeE11()">
+                    <option value="Selecciona">Selecciona</option>
+                    <option value="Azucar">Azucar</option>
+                    <option value="Arroz">Arroz</option>
+                    <option value="Galleta">Galleta</option>
+                </select>
+                <span>Precio c/u: <label id="precioE11"></label></span>
+                <div>
+                    <input type="number" id="cantidadE11" placeholder="Cantidad Comprada">
+                    <input type="button" value="Calcular" onclick="ejer11()">
+                </div>
+                <div>
+                    <span>Monto a Pagar: <label id="resulE11"></label></span>
+                </div>
+            </div>
+            <p>12.	Programa que pase una velocidad en Km/h a m/s. La velocidad se lee por teclado.</p> 
+            <div>
+                <input type="number" placeholder="Velocidad en km/h" id="numE12">
+                <input type="button" value="pasar a m/s" onclick="ejer12()">
+                <div>
+                    <span>m/s: <label id="resulE12"></label></span>
+                </div>
+            </div>
+            <p>13.	Escribir un programa que calcule el área de un triángulo, capturando los valores de base y altura.</p> 
+            <div>
+                <input type="number" placeholder="Base del Triangulo" id="baseE13">
+                <input type="number" placeholder="Altura del Triangulo" id="altoE13">
+                <input type="button" value="Calcular" onclick="ejer13()">
+                <div>
+                    <span>Area: <label id="resulE13"></label></span>
+                </div>
+            </div>
+            <p>14.	Escribir un programa que calcule la velocidad de un proyectil que recorre x Km en t minutos. Expresar el resultado en metros por minutos</p>
+            <div>
+                <input type="number" id="kmE14" placeholder="Cantidad de km">
+                <input type="number" id="minE14" placeholder="Cantidad de minutos">
+                <input type="button" value="Calcular" onclick="ejer14()">
+                <div>
+                    <span>m/min: <label id="resulE14"></label></span>
+                </div>
+            </div>
+            <p>15.	Escribir un programa que evalúe la siguiente expresión: 
+            (a + 7 * c) / (b + 2 - a) + 2 * b</p> 
+            <div>
+                <input type="number" placeholder="Valor para a" id="valoraE15">
+                <input type="number" placeholder="Valor para b" id="valorbE15">
+                <input type="number" placeholder="Valor para c" id="valorcE15">
+                <input type="button" value="Calcular" onclick="ejer15()">
+                <div>
+                    <span>Resultado : <label id="resulE15"></label></span>
+                </div>
+            </div>
+            <p>16.	Escribir un programa que evalúe la siguiente expresión: (a + 5) * 3 / 2 * b – b</p> 
+            <div>
+                <input type="number" placeholder="Valor para a" id="valoraE16">
+                <input type="number" placeholder="Valor para b" id="valorbE16">
+                <input type="button" value="Calcular" onclick="ejer16()">
+                <div>
+                    <span>Resultado : <label id="resulE16"></label></span>
+                </div>
+            </div>
+            <p>17.	Escribir un programa que evalúe la siguiente expresión: 
+            (-b + raíz cuadrada (b2 – 4 * a * c) / (2 * a)</p> 
+
+            <p>18.	Diseñe un programa que determine el porcentaje de varones y de mujeres que hay en un salón de clases.</p> 
+            <p>19.	Escribir un programa que convierta un número de segundos en su equivalente en minutos y segundos.</p> 
+
+            <p>20.	Escribir un programa que evalue la siguiente expresión:
+            (a+b)-5(c-a)
+            a^4-6</p>
+
+            <p>21.	Escribir un programa que dibuje un rombo de 'n' lineas lleno de asteriscos</p>
+            <div>
+                <input type="number" placeholder="Ingrese cantidad de lineas" id="lineasE21">
+                <input type="button" value="Dibujar" onclick="ejer21()"><br><br>
+                <div>
+                    <label id="romboE21"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Javascript/s1p1.js"></script>
+</body>
+</html>

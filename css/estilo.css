@@ -528,6 +528,54 @@
   }
 }
 
+/*indexjs*/
+.containerIndexJS {
+  text-align: center;
+  padding: 10px;
+}
+
+.divSesion {
+  display: inline-block;
+  width: 100%;
+}
+
+.divSesion li {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (2fr)[2];
+      grid-template-columns: repeat(2, 2fr);
+}
+
+@media (min-width: 992px) {
+  .divSesion {
+    display: inline-block;
+    width: 80%;
+  }
+}
+
+/*Sesion 1*/
+.bodySesion1 {
+  padding: 10px;
+  font-size: 15px;
+}
+
+.containerSesion1 .divEjerciciosS1 p {
+  font-weight: bold;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  /*para que las flechas del input number no se vean*/
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (min-width: 992px) {
+  .bodySesion1 {
+    padding: 30px;
+  }
+}
+
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -642,6 +690,10 @@ p {
   margin-bottom: 1rem;
 }
 
+b {
+  font-weight: bolder;
+}
+
 a {
   color: #7541c8;
   text-decoration: underline;
@@ -683,19 +735,44 @@ label {
   display: inline-block;
 }
 
-input {
+button {
+  border-radius: 0;
+}
+
+button:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+input,
+button,
+select {
   margin: 0;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
 }
 
+button,
+select {
+  text-transform: none;
+}
 
+select {
+  word-wrap: normal;
+}
+
+select:disabled {
+  opacity: 1;
+}
+
+button,
+[type="button"],
 [type="submit"] {
   -webkit-appearance: button;
 }
 
-
+button:not(:disabled),
+[type="button"]:not(:disabled),
 [type="submit"]:not(:disabled) {
   cursor: pointer;
 }
@@ -934,6 +1011,10 @@ progress {
     -webkit-transform: none;
             transform: none;
   }
+}
+
+.d-block {
+  display: block !important;
 }
 
 .d-flex {
