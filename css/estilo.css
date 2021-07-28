@@ -433,7 +433,7 @@
 .divFormColumn .row label {
   width: auto;
   position: absolute;
-  margin: 48px 10px;
+  margin: 40px 10px;
   color: #ff5263;
   font-size: 12px;
 }
@@ -557,10 +557,55 @@
 .bodySesion1 {
   padding: 10px;
   font-size: 15px;
+  background-color: #27274c;
+  color: #ddd;
+  text-align: center;
+}
+
+.containerSesion1 {
+  margin-top: 20px;
+}
+
+.containerSesion1 h1, .containerSesion1 .h1 {
+  font-weight: bold;
+  font-size: 45px;
 }
 
 .containerSesion1 .divEjerciciosS1 p {
   font-weight: bold;
+  font-size: 18px;
+}
+
+.containerSesion1 .divEjerciciosS1 .divResultado input[type=number], input[type=text] {
+  outline: none;
+  margin-right: 20px;
+  background-color: #ccc;
+  color: #111;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.containerSesion1 .divEjerciciosS1 .divResultado div {
+  margin-bottom: 10px;
+}
+
+.containerSesion1 .divEjerciciosS1 .divResultado input[type=button] {
+  margin: 10px;
+  background-color: #333;
+  color: #ddd;
+  border-radius: 8px;
+  padding: 5px 8px;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+}
+
+.containerSesion1 .divEjerciciosS1 .divResultado input[type=button]:hover {
+  background-color: #222;
+  color: #ddd;
+}
+
+.containerSesion1 .divEjerciciosS1 .divResultado div {
+  margin-top: 15px;
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -573,6 +618,7 @@ input[type=number]::-webkit-outer-spin-button {
 @media (min-width: 992px) {
   .bodySesion1 {
     padding: 30px;
+    text-align: left;
   }
 }
 

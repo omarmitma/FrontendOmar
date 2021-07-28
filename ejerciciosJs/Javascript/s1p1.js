@@ -228,6 +228,58 @@ function ejer16(){
         resulE16.innerHTML=(aE16 + 5) * 3 / 2 * bE16 - bE16;
     }
 }
+/* ejercicio 17 */
+function ejer17(){
+    let aE17=parseFloat(document.getElementById('valoraE17').value);
+    let bE17=parseFloat(document.getElementById('valorbE17').value);
+    let cE17=parseFloat(document.getElementById('valorcE17').value);
+    let resulE17=document.getElementById('resulE17');
+    if(aE17.length==0||bE17.length==0){
+        resulE17.innerHTML='';
+    }else{
+        resulE17.innerHTML=-bE17 + Math.sqrt(2*bE17 * aE17 * cE17) / aE17;
+    }
+}
+/* Ejercicio 18 */
+function ejer18(){
+    let alumE18=document.getElementById('alumE18').value;
+    let resulhE18=document.getElementById('resulhE18');
+    let resulmE18=document.getElementById('resulmE18');
+    let hombres;
+    if(alumE18.length==0){
+        resulhE18.innerHTML='';
+        resulmE18.innerHTML='';
+    }else{
+        hombres=Math.trunc(Math.random()*((parseInt(alumE18))-1)+1);
+        resulhE18.innerHTML=hombres;
+        resulmE18.innerHTML=alumE18-hombres;
+    }
+}
+/* ejercicio 19 */
+function ejer19(){
+    let segundosE19=document.getElementById('segundosE19').value;
+    let resulE19=document.getElementById('resulE19');
+    let min,seg;
+    if(segundosE19.length==0){
+        resulE19.innerHTML='';
+    }else{
+        min=Math.floor(parseInt(segundosE19)/60);
+        seg=parseInt(segundosE19)%60
+        resulE19.innerHTML=min+' : '+seg;
+    }
+}
+/* Ejercicio 20 */
+function ejer20(){
+    let valoraE20=parseFloat(document.getElementById('valoraE20').value);
+    let valorbE20=parseFloat(document.getElementById('valorbE20').value);
+    let valorcE20=parseFloat(document.getElementById('valorcE20').value);
+    let resulE20=document.getElementById('resulE20');
+    if(valoraE20.length==0|| valorbE20.length==0||valorcE20.length==0){
+        resulE20.innerHTML='';
+    }else{
+        resulE20.innerHTML=(valoraE20+valorbE20)-5*(valorcE20-valoraE20)*Math.pow(valoraE20,4)-6;
+    }
+}
 /* Ejercicio 21 */
 function ejer21(){
     let romboE21=document.getElementById('romboE21');
