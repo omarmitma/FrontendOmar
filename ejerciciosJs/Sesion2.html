@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesion 2</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body class="bodySesion">
+    <div class="navegador ps-1 pe-1 d-inline-flex">
+        <a href="indexjs.html" class="rounded-pill nav-link text-white">Retroceder</a>
+    </div>
+    <div class="containerSesion">
+        <h1>Sesion 2</h1>
+        <div class="divEjercicios">
+            <p>1.	Se debe leer como dato, una hora en el formato de 
+                h: min: seg.
+                Diga la hora que es un segundo después. 
+            </p>
+            <div class="divResultado">
+                <label>Ingrese la hora :</label>
+                <input type="time" id="horaE1" step="2">
+                <input type="button" value="Calcular" onclick="ejer1()">
+                <div>
+                    <span>Un segundo después es : <label id="resulE1"></label></span>
+                </div>
+            </div>
+            <p>2. Se tiene que calcular el área de un cuadrado.</p>
+            <div class="divResultado">
+                <input type="number" placeholder="Medida de lado (cm)" id="ladoE2">
+                <input type="button" value="Calcular" onclick="ejer2()">
+                <div>
+                    <span>El area es : <label id="resulE2"></label></span>
+                </div>
+            </div>
+            <p>3. Se tiene que calcular el área de un rectángulo. </p>
+            <div class="divResultado">
+                <input type="number" placeholder="Alto (cm)" id="altoE3">
+                <input type="number" placeholder="Ancho (cm)" id="anchoE3">
+                <input type="button" value="Calcular" onclick="ejer3()">
+                <div>
+                    <Span>El area es : <label id="resulE3"></label></Span>
+                </div>
+            </div>
+            <p>4. Se tiene que calcular el área de un triángulo.</p>
+            <div class="divResultado">
+                <input type="number" placeholder="Base (cm)" id="baseE4">
+                <input type="number" placeholder="Altura (cm)" id="altoE4">
+                <input type="button" value="Calcular" onclick="ejer4()">
+                <div>
+                    <span>El area es : <label id="resulE4"></label></span>
+                </div>
+            </div>
+            <p>5. Se tiene que calcular el área de un rombo.</p>
+            <div class="divResultado">
+                <input type="number" placeholder="Diagonal mayor (cm)" id="mayorE5">
+                <input type="number" placeholder="Diagonal menor (cm)" id="menorE5">
+                <input type="button" value="Calcular" onclick="ejer5()">
+                <div>
+                    <span>El area es : <label id="resulE5"></label></span>
+                </div>
+            </div>
+            <p>6. Se tiene que calcular el área de un trapecio.</p>
+            <div class="divResultado">
+                <input type="number" placeholder="Base mayor (cm)" id="mayorE6">
+                <input type="number" placeholder="Base menor (cm)" id="menorE6">
+                <input type="number" placeholder="Altura (cm)" id="altoE6">
+                <input type="button" value="Calcular" onclick="ejer6()">
+                <div>
+                    <span>El area es: <label id="resulE6"></label></span>
+                </div>
+            </div>
+            <p>7. Se tiene que calcular el área y la longitud de un circulo</p>
+            <div class="divResultado">
+                <input type="number" placeholder="Radio (cm)" id="radioE7">
+                <input type="button" value="Calcular" onclick="ejer7()">
+                <div>
+                    <span>El area es: <label id="areaE7"></label></span>
+                </div>
+                <div>
+                    <span>La longitud es: <label id="longitudE7"></label></span>
+                </div>
+            </div>
+            <p>8. Escribir un programa que calcule el número de horas, minutos y segundos que hay en x segundos.</p> 
+            <div class="divResultado">
+                <input type="number" placeholder="Segundos" id="segE8">
+                <input type="button" value="Calcular" onclick="ejer8()">
+                <div>
+                    <span>Hora : <label id="resulE8"></label></span>
+                </div>
+            </div>
+            <p>9. Si un dólar equivale a S/ 3.95 soles. Hacer un algoritmo que imprima en dólares una cantidad X de soles. </p>
+            <div class="divResultado">
+                <input type="number" placeholder="Cantidad de dolares" id="dolarE9">
+                <input type="button" value="Calcular" onclick="ejer9()">
+                <div>
+                    <span>En soles: <label id="resulE9"></label></span>
+                </div>
+            </div>
+            <p>10. Una tienda ofrece un descuento del 15% sobre el total de la compra, 
+                y un cliente desea saber cuánto deberá pagar finalmente por su compra. </p>
+            <div class="divResultado">
+                <input type="number" placeholder="Total Compra" id="compraE10">
+                <input type="button" value="Calcular" onclick="ejer10()">
+                <div>
+                    <span>Pago : <label id="resulE10"></label></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Javascript/s2.js"></script>
+</body>
+</html>

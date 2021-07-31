@@ -104,7 +104,10 @@
   -webkit-transition: .3s;
   transition: .3s;
 }
-
+.active{
+  background-color: #c5e4e7 !important;
+  color: #00494d !important;
+}
 .tip, .customTip {
   padding: 8px;
 }
@@ -554,7 +557,7 @@
 }
 
 /*Sesion 1*/
-.bodySesion1 {
+.bodySesion {
   padding: 10px;
   font-size: 15px;
   background-color: #27274c;
@@ -562,21 +565,21 @@
   text-align: center;
 }
 
-.containerSesion1 {
+.containerSesion {
   margin-top: 20px;
 }
 
-.containerSesion1 h1, .containerSesion1 .h1 {
+.containerSesion h1, .containerSesion .h1 {
   font-weight: bold;
   font-size: 45px;
 }
 
-.containerSesion1 .divEjerciciosS1 p {
+.containerSesion .divEjercicios p {
   font-weight: bold;
   font-size: 18px;
 }
 
-.containerSesion1 .divEjerciciosS1 .divResultado input[type=number], input[type=text] {
+.containerSesion .divEjercicios .divResultado input[type=number], .containerSesion .divEjercicios .divResultado input[type=text] {
   outline: none;
   margin-right: 20px;
   margin-top: 10px;
@@ -586,11 +589,14 @@
   padding: 5px 10px;
 }
 
-.containerSesion1 .divEjerciciosS1 .divResultado div {
+.containerSesion .divEjercicios .divResultado div {
   margin-bottom: 10px;
+  margin-top: 15px;
+  margin-left: 5px;
+  text-align: left;
 }
 
-.containerSesion1 .divEjerciciosS1 .divResultado input[type=button] {
+.containerSesion .divEjercicios .divResultado input[type=button] {
   margin: 10px;
   background-color: #333;
   color: #ddd;
@@ -600,24 +606,19 @@
   transition: 1s all;
 }
 
-.containerSesion1 .divEjerciciosS1 .divResultado input[type=button]:hover {
+.containerSesion .divEjercicios .divResultado input[type=button]:hover {
   background-color: #222;
   color: #ddd;
-}
-
-.containerSesion1 .divEjerciciosS1 .divResultado div {
-  margin-top: 15px;
 }
 
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   /*para que las flechas del input number no se vean*/
   -webkit-appearance: none;
-  margin: 0;
 }
 
 @media (min-width: 992px) {
-  .bodySesion1 {
+  .bodySesion {
     padding: 30px;
     text-align: left;
   }
